@@ -155,6 +155,12 @@ img {
 	cursor: pointer;
 	font-size: 20px;
 }
+.header .navbar div nav li:last-child a{
+	color: var(--c-yellow);
+}
+.header .navbar div nav li:last-child:hover a{
+	color: var(--c-yellow-alt);
+}
 @media(min-width:768px){
 	.header .navbar nav{
 		display: flex;
@@ -185,7 +191,7 @@ img {
 	.header .navbar nav li:not(:last-child) a{
 		border-bottom: 1px solid var(--c-white);
 	}
-	.header .navbar > div i:is(:active) + nav{
+	.header .navbar > div:is(:hover,:focus) nav{
 		display: block;
 	}
 }
@@ -506,6 +512,11 @@ img {
 	grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
 	gap: 40px;
 }
+@media (max-width:1200px){
+	.membership-page .membership_cart{
+		gap: 80px;
+	}
+}
 @media (max-width:450px){
 	.membership-page .membership_cart{
 		grid-template-columns: minmax(300px,1fr);
@@ -570,8 +581,6 @@ img {
 .membership-page .membership_cart .meber_cart ul li{
 	padding-bottom: 10px;
 }
-.membership-page .membership_cart .meber_cart ul li{
-}
 .membership-page .membership_cart .meber_cart ul li > i{
 	padding-right: 10px;
 	font-size: 18px;
@@ -599,6 +608,10 @@ img {
 	transition:calc(var(--transition) + .2s);
 	white-space:nowrap;
 }
+.membership-page .membership_cart .meber_cart a:hover{
+	background-color: var(--c-yellow-alt);
+	color: var(--c-white);
+}
 .membership-page .membership_cart .meber_cart .arrow{
 	text-transform: uppercase;
 	font-size: 20px;
@@ -623,3 +636,207 @@ img {
 }
 
 /*// membership-page */
+
+/* SayAboutUs */
+.sayAboutUs-page{
+	padding-top: var(--padding-section);
+	padding-bottom: var(--padding-section);
+}
+.sayAboutUs-page .container{
+	display: flex;
+	gap: 40px;
+}
+@media (max-width:991px){
+	.sayAboutUs-page .container{
+		flex-direction: column;
+		text-align: center;
+	}
+}
+.sayAboutUs-page .container .aboutlaft{
+}
+.sayAboutUs-page .container .aboutlaft h3{
+	font-size: 45px;
+	font-family: var(--font-header);
+	letter-spacing: 1px;
+	color:var(--c-black);
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.sayAboutUs-page .container .aboutlaft p{
+	font-size: 15px;
+	color: var(--c-gray);
+	line-height: 1.5;
+	padding-bottom: 20px;
+	text-transform: capitalize;
+}
+.sayAboutUs-page .container .aboutlaft .sayScrool{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.sayAboutUs-page .container .aboutlaft .sayScrool i{
+	display: flex;
+	font-size: 19px;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 55px;
+	background-color: var(--c-yellow);
+	transition: var(--transition);
+	cursor: pointer;
+}
+.sayAboutUs-page .container .aboutlaft .sayScrool i.noback{
+	background-color: #c3ff0059;
+	cursor: not-allowed;
+} 
+.sayAboutUs-page .container .aboutlaft .sayScrool i:not(.noback):hover{
+	background-color: var(--c-yellow-alt);
+	color:var(--c-white);
+}
+@media (max-width:991px){
+	.sayAboutUs-page .container .aboutlaft .sayScrool{
+		justify-content: center;
+	}
+}
+.sayAboutUs-page .container .aboutright{
+	background-color: var(--c-darckgray);
+	padding: 20px;
+	position: relative;
+}
+.sayAboutUs-page .container .aboutright > p{
+	font-size: 30px;
+	font-family: var(--font-header);
+	letter-spacing: 1px;
+	color:var(--c-white);
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	line-height: 1.4;
+}
+@media (max-width:445px){
+	.sayAboutUs-page .container .aboutright > p{
+		font-size: 20px;
+	}
+}
+.sayAboutUs-page .container .aboutright .aboutUser {
+	position: absolute;
+	bottom: 20px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+@media (max-width:991px){
+	.sayAboutUs-page .container .aboutright .aboutUser {
+		position: relative;
+		bottom: auto;
+	}
+}
+.sayAboutUs-page .container .aboutright .aboutUser .imgUser{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background: url(../assets/man.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.sayAboutUs-page .container .aboutright .aboutUser > div{
+	text-transform: capitalize;
+}
+.sayAboutUs-page .container .aboutright .aboutUser > div h5{
+	color:var(--c-white);
+	font-size: 16px;
+}
+.sayAboutUs-page .container .aboutright .aboutUser > div p{
+	color:var(--c-gray);
+	font-weight: bold;
+	font-size: 15px;
+}
+/*// SayAboutUs */
+
+/* contact-page */
+.contact-page{
+	padding-top: var(--padding-section);
+	padding-bottom: var(--padding-section);
+	background-color: var(--c-yellow);
+}
+.contact-page .sectionHeader {
+	color:var(--c-black)
+}
+.contact-page .sectionHeader p{
+	color:var(--c-black)
+}
+.contact-page form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+}
+.contact-page form label{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.contact-page form input[type="email"]{
+	width: 450px;
+	height: 45px;
+	border: 1px solid #eee;
+	padding-left: 10px;
+	transition: var(--transition);
+}
+@media (max-width:500px){
+	.contact-page form label input[type="email"]{
+		width: 350px;
+	}
+}
+.contact-page form input[type="email"]::placeholder{
+	text-transform: capitalize;
+	color:#555;
+}
+.contact-page form .sub{
+	cursor: pointer;
+	position: absolute;
+	text-transform: capitalize;
+	font-family: var(--font-header);
+	font-size: 20px;
+	width: 90px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--c-white);
+	background-color: var(--c-black);
+	right: 0;
+	border:0;
+	transition: var(--transition);
+}
+.contact-page form .sub:hover{
+	background-color: var(--c-yellow-alt);
+}
+/*// contact-page */
+
+/* bottom-page */
+.bottom-page{
+	padding-top: calc( var(--padding-section) - 60px );
+	padding-bottom: calc( var(--padding-section) - 60px );
+	background-color: var(--c-black);
+}
+.bottom-page .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--c-white);
+}
+.bottom-page .container .logo li a{
+	font-size: 25px;
+	font-family: var(--font-header);
+	color: var(--c-white);
+	text-transform: capitalize;
+}
+.bottom-page .container .logo li i{
+	color: var(--c-yellow);
+}
+.bottom-page .container .love a{
+	font-size: 15px;
+	color: var(--c-gray);
+}
+/*// bottom-page */
