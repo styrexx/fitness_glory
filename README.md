@@ -9,6 +9,7 @@ Transforme  design to a responsive webpage with HTML and CSS.
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
+  - [Screenshot](#Screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Learning](#learning)
@@ -27,6 +28,11 @@ Users should be able to:
 
 - Solution URL: [Solution URL here](https://github.com/cd-wb/fitness-golry)
 - Live Site URL: [Live site URL here](https://cd-wb.github.io/fitness-golry)
+
+### Screenshot
+
+- A Membership Section Changing in The Color in hover and Translate of The Caret
+![](./assets/mediem.gif)
 
 ## My process
 
