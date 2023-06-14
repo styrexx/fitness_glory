@@ -8,3 +8,23 @@ listN.onclick = function () {
     nav.classList.remove("show");
   }
 };
+
+// up to top
+let upTop = document.querySelector(".uptop");
+
+document.body.onscroll = function () {
+  if (scrollY >= 868) {
+    upTop.style.display = "flex";
+    setTimeout(() => (upTop.style.opacity = "1"), 90);
+  } else {
+    upTop.style.opacity = "0";
+    upTop.style.display = "none";
+  }
+};
+upTop.onclick = function () {
+  scrollTo({
+    left: 0,
+    top: 0,
+    behavior: "smooth",
+  });
+};
