@@ -9,7 +9,7 @@ listN.onclick = function () {
   }
 };
 
-// up to top
+// Go to top
 let upTop = document.querySelector(".uptop");
 
 document.body.onscroll = function () {
