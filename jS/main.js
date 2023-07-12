@@ -91,6 +91,7 @@ window.addEventListener("scroll", () => {
   headerAction(sectionProg, h2Prog, pProg);
   headerAction(sectionMemb, h2Memb, pMemb);
   showQuot();
+  autoFocusInput();
 });
 
 function headerAction(section, h2, p) {
@@ -103,5 +104,14 @@ function headerAction(section, h2, p) {
 function showQuot() {
   if (window.scrollY >= quoteSection.offsetTop - 150) {
     textQ.style.opacity = 1;
+  }
+}
+
+// auto focus for join
+const sectionJoin = document.querySelector("#joinNow"),
+  emailInput = document.querySelector("#emailInput");
+function autoFocusInput() {
+  if (window.scrollY >= sectionJoin.offsetTop - 400) {
+    emailInput.focus();
   }
 }
