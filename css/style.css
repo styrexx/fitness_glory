@@ -373,6 +373,14 @@ img {
   padding-bottom: var(--padding-section);
   background-color: var(--c-black);
 }
+.program-page .sectionHeader {
+  overflow: hidden;
+}
+.program-page .sectionHeader h2,
+.program-page .sectionHeader p {
+  transform: translateY(200%);
+  transition: 0.5s;
+}
 .program-page .program_cart {
   padding-top: calc(var(--padding-section) - 20px);
   display: flex;
@@ -472,6 +480,8 @@ img {
   text-transform: uppercase;
   line-height: 1.5;
   font-size: 30px;
+  opacity: 0;
+  transition: 0.5s;
 }
 .quote p span {
   color: var(--c-yellow-alt);
@@ -503,6 +513,14 @@ img {
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
   background-color: var(--c-black);
+}
+.membership-page .sectionHeader {
+  overflow: hidden;
+}
+.membership-page .sectionHeader h2,
+.membership-page .sectionHeader p {
+  transform: translateY(200%);
+  transition: 0.5s;
 }
 .membership-page .membership_cart {
   padding-top: calc(var(--padding-section) - 20px);
@@ -697,9 +715,14 @@ img {
   }
 }
 .sayAboutUs-page .container .aboutright {
+  min-height: 288px;
   background-color: var(--c-darckgray);
   padding: 20px;
   position: relative;
+  display: none;
+}
+.sayAboutUs-page .container .u1 {
+  display: block;
 }
 .sayAboutUs-page .container .aboutright > p {
   font-size: 30px;
@@ -715,6 +738,7 @@ img {
     font-size: 20px;
   }
 }
+
 .sayAboutUs-page .container .aboutright .aboutUser {
   position: absolute;
   bottom: 20px;
@@ -732,7 +756,21 @@ img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  background-size: cover;
+  background-position: center;
+}
+.sayAboutUs-page .container .aboutright .aboutUser .iu1 {
   background: url(../assets/man.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sayAboutUs-page .container .aboutright .aboutUser .iu2 {
+  background: url(../assets/user2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sayAboutUs-page .container .aboutright .aboutUser .iu3 {
+  background: url(../assets/user3.jpg);
   background-size: cover;
   background-position: center;
 }
