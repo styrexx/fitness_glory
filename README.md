@@ -54,4 +54,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [Abdessamad](https://www.frontendmentor.io/profile/kop-left)
-- github - [Abdessamad](https://www.github.com/cd-wb)
+- github - [Abdessamad](https://www.github.com/styrexx)
