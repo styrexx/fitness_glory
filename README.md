@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/cd-wb/fitness-golry)
-- Live Site URL: [Live site URL here](https://cd-wb.github.io/fitness-golry)
+- Solution URL: [Solution URL here](https://github.com/styrexx/fitness-golry)
+- Live Site URL: [Live site URL here](https://styrexx.github.io/fitness-golry)
 
 ### Screenshot
 
@@ -49,6 +49,7 @@ Users should be able to:
 - background image
 - Practex in flexbox and grid
 - Practex in pseudo elemente `:after` and `:before`
+- JavaScript 
 
 ## Author
 
