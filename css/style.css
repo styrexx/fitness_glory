@@ -233,6 +233,7 @@ img {
   transform: rotateX(180deg);
   line-height: 0.969em;
   background: linear-gradient(0deg, var(--c-white) 0, transparent 70%);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   opacity: 0.5;

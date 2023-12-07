@@ -1,6 +1,6 @@
-# Fitness site [GLORY] 
+# Fitness site [GLORY]
 
-Transforme  design to a responsive webpage with HTML and CSS.
+Transforme design to a responsive webpage with HTML and CSS.
 
 ![](./assets/Screenshot.png)
 
@@ -14,7 +14,6 @@ Transforme  design to a responsive webpage with HTML and CSS.
   - [Built with](#built-with)
   - [Learning](#learning)
 - [Author](#author)
-
 
 ## Overview
 
@@ -32,7 +31,7 @@ Users should be able to:
 ### Screenshot
 
 - A Membership Section Changing in The Color in hover and Translate of The Caret
-![](./assets/mediem.gif)
+  ![](./assets/mediem.gif)
 
 ## My process
 
@@ -49,7 +48,7 @@ Users should be able to:
 - background image
 - Practex in flexbox and grid
 - Practex in pseudo elemente `:after` and `:before`
-- JavaScript 
+- JavaScript
 
 ## Author
 
